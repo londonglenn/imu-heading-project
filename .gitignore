@@ -3,7 +3,7 @@ __pycache__/
 .venv/
 venv/
 
-data
+data/
 plots/
 calibration/calibrated_output.csv
 *.log
