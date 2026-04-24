@@ -2,7 +2,7 @@
 import json
 import numpy as np
 import pandas as pd
-from Calibration import calibrate_magnetometer, apply_calibration
+from src.Calibration import calibrate_magnetometer, apply_calibration
 
 def main():
     # 1. Load calibration data

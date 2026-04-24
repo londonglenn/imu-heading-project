@@ -7,3 +7,4 @@ data/
 plots/
 calibration/calibrated_output.csv
 *.log
+archive/
