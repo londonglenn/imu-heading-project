@@ -32,7 +32,6 @@ It supports:
 │   └── plot_heading_spiral.py
 │
 ├── data/
-├── outputs/
 └── README.md
 ```
 
@@ -410,32 +409,6 @@ The ROS2 node:
 
 ---
 
-## Dependencies
-
-Install Python dependencies:
-
-```bash
-pip install numpy pandas matplotlib ahrs
-```
-
-For ROS2, install the required ROS2 Python packages for your distro.
-
-Example:
-
-```bash
-sudo apt install ros-<distro>-rclpy
-```
-
-Replace `<distro>` with your ROS2 distribution, such as:
-
-```text
-humble
-iron
-jazzy
-```
-
----
-
 ## Expected CSV Columns
 
 ### IMU CSV
@@ -483,18 +456,6 @@ Z
 | `magnetometer_calibration_vectors.json` | Saved calibration parameters |
 | `imu_heading_output.csv` | Offline heading output |
 | `calibrated_output.csv` | Optional calibrated magnetometer output |
-
----
-
-## Quick Start
-
-```bash
-python scripts/sanity.py
-python scripts/align_imu_mag.py --imu data/IMU_RAW.csv --mag data/MAG_RAW.csv --out outputs/IMU_MAG_ALIGNED.csv
-python scripts/run_cal.py
-python scripts/Test_heading.py
-python scripts/plot_heading_spiral.py
-```
 
 ---
 
@@ -550,6 +511,5 @@ Check:
 - Keep coordinate-frame conventions consistent.
 - Calibration is optional but strongly recommended.
 - Offline and ROS2 pipelines are intended to use the same assumptions.
-- Do not change axis mapping unless the sensor mounting orientation changes.
 
 ---
