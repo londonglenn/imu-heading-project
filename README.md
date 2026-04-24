@@ -1,4 +1,4 @@
-# 🧭 IMU + Magnetometer Heading Estimation Pipeline
+# IMU + Magnetometer Heading Estimation Pipeline
 
 ## Overview
 
